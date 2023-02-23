@@ -10,7 +10,7 @@ body{
 }
 
 .note{
-    font-size: 15px;
+    font-size: 12.10px;
     color: rgb(112, 12, 54);
     font-weight: bold;
 }
@@ -46,21 +46,12 @@ body{
 }
 
 .play{
-    font-size: 23px;
+    font-size: 20px;
     padding: 15px ;
     font-weight: bold;
-    width: 7%;
-}
-
-.stop{
-    font-size: 23px;
-    font-weight: bold;
-    padding: 15px;
-    width: 7%;
 }
 
 canvas{
-    border: 5px solid whitesmoke;
     border-radius: 15px;
-    margin: 65px;
+    padding: 15px;
 }

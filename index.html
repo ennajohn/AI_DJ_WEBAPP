@@ -10,36 +10,24 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
 
   <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
-<body background = "background.jpg">
+<body background = "img.jpg">
 <center>
-  	<h3 class="btn btn-warning heading">AI DJ WEB APP
+  	<h3 class="btn btn-danger heading">AI DJ WEB APP
 	    <br>
-	    <span class="note">NOTE - Move your left-hand wrist up and down for increasing and decreasing the volume. 
-        Move your right-hand wrist up and down for increasing and decreasing the speed</span>
+	    <span class="note">NOTE - Get your left-hand wrist in front of the webcam to play marvellous Dance ka Bhoot Song.
+            Get your right hand wrist in front of the webcam to play most favourite Ranjha song. 
+            Keep atleast 2 feet distance from the webcam, so that your wrists are detected quickly.</span>
   	</h3>
 	<br><br>
 
-  <div class="div_speed">
-  <img src="disk.gif" class="div_speed_img">
-  <br>
-  <h3 class="btn btn-success" id="speed"> Speed</h3>
-  </div>
-
-  <div class="div_volume">
-    <img src="disk.gif" class="div_vol_img">
-    <br>
-    <h3 class="btn btn-success" id="volume"> Volume</h3>
- </div>
-<br> <br>
- <button class="btn btn-danger play" onclick="play()">Play</button>
- 
- <button class="btn btn-warning stop" onclick="stop()"> Stop </button>
- <br> 
+  
+ <button class="btn btn-warning play" onclick="display()">Song Name</button>
 </center>
 
 <script src="main.js"></script>
