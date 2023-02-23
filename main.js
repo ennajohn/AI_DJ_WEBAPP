@@ -5,6 +5,7 @@ leftWristY = 0;
 rightWristX = 0;
 rightWristY = 0;
 scoreleftWrist = 0;
+scorerightWrist = 0;
 Kesariya_Music = "";
 
 function preload(){
@@ -35,6 +36,19 @@ function draw(){
    Dance_Music = Dance_Bhoot_Song.isPlaying();
     console.log(Dance_Music);
 
+    Ranjha_Music = Ranjha_song.isPlaying();
+    console.log(Ranjha_Music);
+
+    if(scorerightWrist > 0.2){
+        circle(rightWristX,rightWristY,20);
+        Dance_Bhoot_Song.stop;
+
+        if(Ranjha_Music == false){
+            Ranjha_song.play();
+            document.getElementById('play').innerHTML ="Song Name : Ranjha Song";
+        }
+    }
+
     if(scoreleftWrist > 0.2){
         circle(leftWristX,leftWristY,20);
         Ranjha_Song.stop;
@@ -56,6 +70,7 @@ function gotPoses(results){
         rightWristY = results[0].pose.rightWrist.y;
         console.log("rightWristX =" + rightWristX + "rightWristY =" + rightWristY);
 
+       scorerightWrist = results[0].pose.keypoints[10].score;
         scoreleftWrist = results[0].pose.keypoints[9].score;
         console.log("ScoreleftWrist = " + scoreleftWrist);
 
